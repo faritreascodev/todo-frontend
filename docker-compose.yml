@@ -1,0 +1,17 @@
+networks:
+  dokploy-network:
+    external: true
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: todo-frontend
+    restart: unless-stopped
+    expose:
+      - 80
+    networks:
+      - dokploy-network
+    environment:
+      - NODE_ENV=production
