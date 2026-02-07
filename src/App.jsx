@@ -32,8 +32,9 @@ function App() {
     return (
         <div className="container">
             <header className="header">
-                <h1>Task Manager</h1>
-                <p>Sistema de gestión de tareas con monitoreo integrado</p>
+                <h1>Task Manager By <i>faritreasco.dev</i></h1>
+                {/* Mensaje de bienvenida */}
+                <p>Bienvenido a tu gestor de tareas personal</p>
             </header>
 
             <TaskStats stats={stats} />
